@@ -49,6 +49,7 @@ public class ApiController {
     public Pregunta borrarPorId(@PathVariable Integer id){
         return preguntaService.borrarById(id);
     }
+
     @ResponseBody
     @GetMapping("/preguntas/{id}")
     public Pregunta obtenerPorId(@PathVariable Integer id){
